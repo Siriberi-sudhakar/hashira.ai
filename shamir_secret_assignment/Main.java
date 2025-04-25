@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-import java.math.BigInteger; // <-- Added for BigInteger
+import java.math.BigInteger; 
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
@@ -28,7 +28,7 @@ public class Main {
                         String value = point.get("value").toString();
                         // Use BigInteger to parse large base numbers
                         BigInteger bigY = new BigInteger(value, base);
-                        double y = bigY.doubleValue(); // convert to double for interpolation
+                        double y = bigY.doubleValue(); 
                         xList.add(x);
                         yList.add(y);
                     }
